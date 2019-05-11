@@ -1,5 +1,5 @@
 # RentalVilla
-A website which enables the client to make booking enquirers as well as view available slots and info about the villa.
+A website which enables the client to make booking enquirees as well as view available slots and info about the villa.
 ## home page
 ![home](https://user-images.githubusercontent.com/43136483/57562668-a1e0f100-738c-11e9-850a-91f4ca65494b.png)
 ## navigation menu
