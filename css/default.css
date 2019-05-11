@@ -1,0 +1,179 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+body{
+  display: grid;
+  grid-template-areas: "TOP TOP TOP TOP""HL HM HM HR" "LEFT1 LEFT2 RIGHT1 RIGHT2""N N N N" "LEFT LEFT RIGHT RIGHT""A A A A" "MIDDLE MIDDLE MIDDLE MIDDLE" "L M M R" "BOTTOM BOTTOM BOTTOM BOTTOM";
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  background-color: #5687b9;
+  color: white;
+  font-size: 1.5em;
+}
+header{
+  visibility: visible;
+  z-index: 0;
+  position: absolute;
+  text-align: left;
+  font-size: 3em;
+  width: 100%;
+  position: fixed;
+}
+header img{
+  max-width: 100%;
+}
+
+header+nav{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: fixed;
+  visibility: hidden;
+  width: 100%;
+  grid-area: N;
+  background-color: white;
+  color: black;
+  height: 28vh;
+  z-index: 1;
+}
+nav img{
+  max-width: 100%;
+  margin-left: -3em;
+  margin-top: .5em;
+  height: 3em;
+}
+ul{
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 1em;
+
+}
+ul>a:first-of-type{
+  font-size: 1.8em;
+  margin-bottom: .5em;
+  text-align: left;
+
+}
+ul li{
+  margin-bottom: .8em;
+  text-align: left;
+}
+img+ul{
+  grid-area: LEFT1;
+
+
+
+
+
+}
+nav ul+ul{
+  grid-area: LEFT2;
+
+
+}
+ul+ul+ul{
+  grid-area: RIGHT1;
+
+
+}
+ul+ul+ul+ul{
+  grid-area: RIGHT2;
+
+}
+#slider{
+  grid-area: MIDDLE;
+  text-align: center;
+  z-index: -1;
+}
+#photo{
+  width: 100%;
+  max-width: 100%;
+  z-index: -1;
+  height: 100vh;
+}
+
+main {
+  grid-area: M;
+  margin-top: 10em;
+  margin-bottom: 3em;
+
+}
+a{
+  color: black;
+
+}
+main h1{
+  margin-bottom: 1em;
+  font-size: 3em;
+}
+main p{
+  font-size: 1.3em;
+  grid-area: M;
+}
+footer{
+  grid-area: BOTTOM;
+  background-color: white;
+  height: 5vh;
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin-top:.5em;
+  padding-top: .5em;
+}
+footer small{
+  margin-top:.5em;
+}
+form{
+  margin-left: : 1EM;
+  text-align: center;
+  font-size: 2em;
+  outline:2px solid white;
+  padding-bottom: 3em;
+  padding-top: 1em;
+  margin-top: .5em;
+}
+form input{
+  font-size: .5em;
+  margin: .8em;
+  height: 1.5em;
+  padding: .5em;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+iframe{
+  max-width: 100%;
+  text-align: center;
+  margin:auto;
+}
+#details{
+  margin-left: 1em;
+  text-align: left;
+  margin-top: 1em;
+  font-size: 1em;
+}
+#enquiry{
+  text-align: center;
+}
+textarea{
+  padding: .6em;
+  margin: .2em;
+  font-size: .5em;
+  max-width: 100%;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

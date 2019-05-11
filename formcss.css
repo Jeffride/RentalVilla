@@ -1,0 +1,82 @@
+form{
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 30em;
+  height:40em;
+  margin-top: -5em;
+  margin-left: -15em;
+  font-size: 2em;
+}
+input{
+  margin: 1em;
+  box-shadow: 3px 3px 4px #888888;
+  padding: .24em;
+}
+p{
+  font-size: 2em;
+
+}
+body{
+  background-image: url("/images/whitebluegrad.svg");
+}
+header+nav{
+  position: fixed;
+  visibility: hidden;
+  width: 100%;
+  grid-area: N;
+  background-color: white;
+  color: black;
+  height: 28vh;
+  z-index: 1;
+}
+nav img{
+  position: absolute;
+  max-width: 100%;
+  margin-left: 1em;
+  margin-top: .5em;
+}
+ul{
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+ul>a:first-of-type{
+  font-size: 1.8em;
+  margin-bottom: .5em;
+  text-align: left;
+
+}
+ul li{
+  margin-bottom: .8em;
+  text-align: left;
+}
+img+ul{
+  position: absolute;
+  left: 20%;
+  top:15%;
+
+
+
+
+}
+nav ul+ul{
+  position: absolute;
+  left: 40%;
+  top:15%;
+
+
+}
+ul+ul+ul{
+  position: absolute;
+  left: 60%;
+  top:15%;
+
+
+}
+ul+ul+ul+ul{
+  position: absolute;
+  left: 80%;
+  top:15%;
+
+}

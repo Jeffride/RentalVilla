@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SpainVilla</title>
+  <meta name="description" content="Playa Flamenca Villa">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/default.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <script>
+  function menuShow(n){
+    document.getElementById('menu').style.visibility=n;
+    //in here we are gonna make an invisible by default menu visible.
+
+  }
+  </script>
+  <script>
+  var i = 0;
+  var images = [];
+  var time = 4000;
+
+  //image list
+  images[0]='/images/orihuela_coast.jpg';
+  images[1]='/images/pool1.jpg';
+
+
+  //change image
+  //function changeImg(){
+    //document.getElementById('photo').src = images[i];
+
+    if(i<images.length -1){
+      i++;
+    }
+    else {
+      i=0;
+    }
+    setTimeout("changeImg()", time);
+  }
+  window.onload = changeImg;
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <img src="/images/burger.png"onclick="menuShow('visible');"/>
+  </header>
+<nav id="menu">
+  <img src="/images/grey_x.png"onclick="menuShow('hidden');"/>
+
+  <ul>
+    <a href="index.html"><li>Home</li></a>
+    <a href="about.html"><li>Location</li></a>
+    <a href="about.html"><li>Facilities</li></a>
+
+  </ul>
+  <ul>
+    <a href="about.html"><li>Galery</li></a>
+    <a href="about.html"><li>The villa</li></a>
+    <a href="about.html"><li>The area</li></a>
+  </ul>
+
+  <ul>
+    <a href="about.html"><li>Booking</li></a>
+    <a href="about.html"><li>prices</li></a>
+    <a href="form.html"><li>make an enquiry</li></a>
+    <a href="about.html"><li>reviews</li></a>
+
+  </ul>
+  <ul>
+    <a href="about.html"><li>Contact</li></a>
+    <a href="about.html"><li>Get here</li></a>
+  </ul>
+
+
+</nav>
+
+<main>
+  <h1 id="enquiry">Make an enquiry</h1>
+  <p id="form">
+<form action = "form_process.php" method="post">
+
+<iframe src="https://calendar.google.com/calendar/embed?src=cuh71cdtm4e4u7lbi97etgcimk%40group.calendar.google.com&ctz=Europe%2FDublin" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<p id="details">Name:<input type="text" name="name" value="name"><br>
+E-mail:<input type="text" name="email" value="eg: something@gmail.com"><br>
+Check-in:<input type="date" name="datein" value="eg: something@gmail.com"><br>
+Check-out:<input type="date" name="dateout" value="eg: something@gmail.com"><br>
+Additional comments:<br><textarea rows="8" cols="50" name="comment" form="usrform">
+Enter text here...</textarea>
+<br>
+<input type="submit" name="make enquiry">
+</p>
+</form>
+</p>
+  </main>
+</body>
+<footer id = "bot">
+  <small><i>Made by Jeff Attride</i></small>
+</footer>
+</html>

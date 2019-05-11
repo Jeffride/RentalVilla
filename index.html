@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SpainVilla</title>
+  <meta name="description" content="Playa Flamenca Villa">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/default.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <script>
+  function menuShow(n){
+    document.getElementById('menu').style.visibility=n;
+    //in here we are gonna make an invisible by default menu visible.
+
+  }
+  </script>
+  <script>
+  var i = 0;
+  var images = [];
+  var time = 4000;
+
+  //image list
+  images[0]='/images/orihuela_coast.jpg';
+  images[1]='/images/pool1.jpg';
+
+
+  //change image
+  //function changeImg(){
+    //document.getElementById('photo').src = images[i];
+
+    if(i<images.length -1){
+      i++;
+    }
+    else {
+      i=0;
+    }
+    setTimeout("changeImg()", time);
+  }
+  window.onload = changeImg;
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <img src="/images/burger.png"onclick="menuShow('visible');"/>
+  </header>
+<nav id="menu">
+  <img src="/images/grey_x.png"onclick="menuShow('hidden');"/>
+
+  <ul>
+    <a href="index.html"><li>Home</li></a>
+    <a href="about.html"><li>Location</li></a>
+    <a href="about.html"><li>Facilities</li></a>
+
+  </ul>
+  <ul>
+    <a href="about.html"><li>Galery</li></a>
+    <a href="about.html"><li>The villa</li></a>
+    <a href="about.html"><li>The area</li></a>
+  </ul>
+
+  <ul>
+    <a href="about.html"><li>Booking</li></a>
+    <a href="about.html"><li>prices</li></a>
+    <a href="form.html"><li>make an enquiry</li></a>
+    <a href="about.html"><li>reviews</li></a>
+
+  </ul>
+  <ul>
+    <a href="about.html"><li>Contact</li></a>
+    <a href="about.html"><li>Get here</li></a>
+  </ul>
+
+
+</nav>
+
+  <p id = slider>
+    <img id="photo" class="fade"src="/images/orihuela_coast.jpg"/>
+  </p>
+
+<main>
+    <h1>Welcome,</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc elit, consequat eu dolor ac, sagittis tincidunt lectus. Sed id gravida neque. Phasellus iaculis leo ac maximus placerat. Duis nec massa elit. Praesent sit amet efficitur ipsum. Phasellus nec tortor non massa fringilla ultricies. Nulla facilisi. Etiam erat dui, lacinia non commodo vitae, pellentesque a purus. Cras ac ipsum aliquet, venenatis sem a, pharetra lectus. Fusce vitae vulputate justo.
+
+      Phasellus semper neque eget elit luctus semper. Nullam in lacus in velit efficitur eleifend. In et malesuada dolor, non tempus sem. Sed vitae sodales ex, vitae pulvinar justo. Etiam ac congue augue. Maecenas accumsan laoreet mauris. Pellentesque et erat commodo, convallis diam non, egestas tortor. Quisque vel malesuada enim, quis dictum neque. Pellentesque ac lacus elementum, tempus nisi sed, faucibus mauris. Vestibulum imperdiet convallis nisi non aliquet. Ut ut finibus ex. In id leo viverra, commodo turpis quis, laoreet ipsum. In hac habitasse platea dictumst. Aliquam erat volutpat. Proin tortor leo, venenatis ac erat sit amet, viverra eleifend erat.
+
+
+
+    </p>
+  </main>
+</body>
+<footer>
+  <small><i>Made by Jeff Attride</i></small>
+</footer>
+</html>
